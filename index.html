@@ -143,7 +143,7 @@
     // symbols for origin vs destination CircleMarker stylings
             if (geoJsonFeature.properties.isOrigin) {
               return {
-                renderer: canvasRenderer, // recommended to use your own L.canvas()
+                renderer: canvasRenderer, // recommended to use your own L.canvas()---make the above funciton a variable
                 radius: 5,
                 weight: 1,
                 color: 'rgb(255, 155, 61)',
@@ -167,7 +167,7 @@
 
               title.onAdd = function (map) {
                   this._div = L.DomUtil.create('div', 'title'); // create a div with a class "title"
-                  this._div.innerHTML = "<h3>TOP 10 Net Migration from Cook County, Illinois</h3>";  // Title text, may use html to customize
+                  this._div.innerHTML = "<h3>TOP 10 Gross Inflow Migration To Cook County, Illinois</h3>";  // Title text, may use html to customize
                   return this._div;
               };
 
